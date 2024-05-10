@@ -11,4 +11,5 @@ urlpatterns = [
     path('<int:pk>/edit/', views.BirthdayUpdateView.as_view(), name='edit'),
     path('<int:pk>/delete/', views.BirthdayDeleteView.as_view(), name='delete'),
     path('login_only/', views.simple_view),
+    path('<int:pk>/comment/', views.CongratulationCreateView.as_view(), name='add_comment'),
 ]
